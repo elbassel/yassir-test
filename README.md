@@ -14,7 +14,7 @@ Focuses on Backend only
   - GET /iqair/cities?lat=tttt&lon=nnnn
 - POST /iqair/cities?lat=tttt&lon=nnnn
   - This API is called via scheduler every minute to get air quality information of a nearest city to GPS coordinates and save it in the database.
-- Get the most polluted date and time of Paris zone
+
 
 ## Technologies
 Nodejs, Expressjs, MongoDB, Mongoose, Jest, Docker, Docker Compose
