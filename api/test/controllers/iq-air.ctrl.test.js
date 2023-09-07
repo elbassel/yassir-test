@@ -22,7 +22,7 @@ describe("GET /iqair/cities", () => {
     });
 
     it('should return not found city', async () => {
-        axios.get.mockImplementation((done) => {
+        axios.get.mockImplementation(() => {
             throw notFoundCityResponse;
         });
         const response = await request.get('/iqair/cities?lat=1&lon=1')
@@ -48,7 +48,7 @@ describe('POST /iqair/cities', () => {
     });
 
     it('should return not found city', async () => {
-        axios.get.mockImplementation((done) => {
+        axios.get.mockImplementation(() => {
             throw notFoundCityResponse;
         });
         const response = await request.post('/iqair/cities?lat=1&lon=1')
