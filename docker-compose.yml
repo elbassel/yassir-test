@@ -1,0 +1,25 @@
+version: '3.0'
+
+services:
+  api:
+    build: ./api
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URL=mongodb://database:27017/iqair
+    env_file:
+      - ./api/.env
+    links:
+      - database:27017
+
+  scheduler:
+    build: ./scheduler
+    environment:
+        - API_URL=http://api:3000
+    links:
+      - api:3000
+
+  database:
+    image: mongo
+    ports:
+      - "27017:27017"
