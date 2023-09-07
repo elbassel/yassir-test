@@ -44,12 +44,12 @@ A script is used to store 400 customers for the first time app runs to allow you
 ## Run App
 - Clone the repo, and go inside it then the below command, if the commands don't run, try it with sudo:
 ```
-git clone git@github.com:elbassel/tradling.git
-cd tradling
+git clone git@github.com:elbassel/yassir-test.git
+cd yassir-test
 docker-compose build
 docker-compose up
 ```
-- Check localhost:3000/api-docs for API documentation
+
 
 ## Run tests
 ```
